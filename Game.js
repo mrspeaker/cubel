@@ -90,7 +90,7 @@ class Game {
     this.entities.map(e => e.update());
 
     renderer.render(scene, camera);
-    // camera.position.y += Math.sin(spd) * 10;
+
     camera.position.y = Math.cos(spd) * 2000;
     camera.position.x = Math.cos(spd) * 2000;
     camera.position.z = Math.sin(spd) * 2000;
